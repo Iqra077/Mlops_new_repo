@@ -34,6 +34,4 @@ interface = gr.Interface(
     css=".gradio-container { background-color: #f4f4f9; padding: 20px; border-radius: 10px; }"  # Custom CSS for styling
 )
 
-# Launch the app
-if __name__ == "__main__":
-    interface.launch(share=True)
+interface.launch(share=True)
