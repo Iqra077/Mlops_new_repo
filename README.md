@@ -1,26 +1,44 @@
-# Mlops_new_repo
 ---
-title: Demo
-emoji: 🌖
-colorFrom: purple
-colorTo: purple
+title: Sentiment Analysis App
+emoji: 💬
+colorFrom: "#00C9FF"
+colorTo: "#92FE9D"
 sdk: gradio
-sdk_version: 3.0.6
+sdk_version: "3.0.0"
 app_file: app.py
 pinned: false
-license: cc
 ---
 
+# Sentiment Analysis with Hugging Face and Gradio
 
-[![Sync to Hugging Face hub](https://github.com/nogibjj/hugging-face/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/hugging-face/actions/workflows/main.yml)
+This app performs sentiment analysis using a pre-trained model from Hugging Face's Transformers library. Built with Gradio, it provides an easy-to-use interface for predicting whether the sentiment of the input text is **positive**, **negative**, or **neutral**.
 
+## Features
+- Predicts sentiment (positive, negative, or neutral) based on the input text.
+- Provides confidence scores for each prediction.
+- Built with MLOps principles for easy updates and continuous deployment.
 
-[Try Demo Text Summarization Here](https://huggingface.co/spaces/noahgift/demo)
+## How to Use
+1. **Enter your text** in the input box.
+2. Click **"Submit"** to analyze the sentiment and view the predicted result along with the confidence score.
 
+## Example Inputs:
+- **"I love spending time with my family!"** → Positive
+- **"This weather is terrible."** → Negative
+- **"The movie was okay, not great but not bad."** → Neutral
 
-![mlops-hugging-face](https://user-images.githubusercontent.com/58792/170845235-7f00d61c-ea36-4d28-82d0-3a9b8c0f1769.png)
+## Deployment
+This app is continuously deployed using **GitHub Actions**. Every time changes are pushed to the `main` branch, the app will automatically update on this Hugging Face Space.
 
+## How It Works
+The app uses a pre-trained model from Hugging Face’s `transformers` library to classify the sentiment of any input text. It leverages Gradio to build an interactive web interface.
 
-## References
+## Tech Stack
+- **Hugging Face**: For the pre-trained sentiment analysis model.
+- **Gradio**: For building the interactive web interface.
+- **GitHub Actions**: For Continuous Integration and Continuous Deployment (CI/CD).
 
-[Watch YouTube Walkthrough](https://youtu.be/VYSGjUa5sc4)
+---
+
+Feel free to test the app by entering text and analyzing its sentiment.
+
