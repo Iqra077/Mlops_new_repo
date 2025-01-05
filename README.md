@@ -1,13 +1,14 @@
 ---
 title: Sentiment Analysis App
 emoji: 💬
-colorFrom: "#00C9FF"
-colorTo: "#92FE9D"
+colorFrom: blue
+colorTo: green
 sdk: gradio
 sdk_version: "3.0.0"
 app_file: app.py
 pinned: false
 ---
+
 
 # Sentiment Analysis with Hugging Face and Gradio
 
