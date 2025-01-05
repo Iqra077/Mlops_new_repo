@@ -19,7 +19,7 @@ def sentiment_analysis(text):
 # Create Gradio Interface
 interface = gr.Interface(
     fn=sentiment_analysis,
-    inputs=[
+    inputs=[ 
         gr.Textbox(lines=2, placeholder="Enter text here...", label="Input Text", interactive=True),
     ],
     outputs="text",
@@ -30,8 +30,9 @@ interface = gr.Interface(
         ["This weather is terrible."],
         ["The movie was okay, not great but not bad."]
     ],
-    theme="compact",  # Use Gradio's compact theme
+    theme="default",  # Use default theme instead of compact
     css=".gradio-container { background-color: #f4f4f9; padding: 20px; border-radius: 10px; }"  # Custom CSS for styling
 )
 
-interface.launch(share=True)
+# Launch the interface
+interface.launch()
